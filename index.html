@@ -18,16 +18,7 @@
 
 </head>
 <body>
-  <button data-modal-open>Открыть модальное окно</button>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <p>
-        
-        </p>
-        <button class="pos"  data-modal-close>Закрыть</button>
-      </div>
 
-    </div>
   
   <header class="hr-toge">
     <!--Section header-->
@@ -70,8 +61,21 @@
       <div class="container"> 
         
          <h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button class="zakaz" type="button">Заказать услугу</button>
-        
+        <button  data-modal-open class="zakaz" type="button">Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p>
+            
+            </p>
+            <button class="pos"  data-modal-close>
+              <svg class="close" width="30" height="30">
+                
+              </svg>
+            </button>
+          </div>
+    
+        </div>
+
        </div>
       
       </section>
