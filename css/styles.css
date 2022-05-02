@@ -704,7 +704,6 @@ color: var(--primary-text-color);
     pointer-events: none;
    
 }
-    
   .modal {
     position: absolute;
     top: 50%;
