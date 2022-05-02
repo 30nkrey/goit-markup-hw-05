@@ -342,9 +342,7 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-.un-chem {
-  padding-top: 0;
-}
+
 
 .our-strong-ul {
   padding-top: 0;
@@ -363,6 +361,7 @@ a {
 }
 .job-f {
   display: flex;
+  justify-content: center;
 }
 
 
@@ -385,6 +384,32 @@ a {
 
 /*Section Чем занимаются*/
 
+.un-chem {
+  padding-top: 0;
+}
+
+.thumb-ch {
+position: relative;
+}
+.label {
+ 
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+} 
+  
+
+.thumb-ch>.label {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+}
   /*Section Team*/
 
 .icons-team {
