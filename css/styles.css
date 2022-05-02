@@ -725,7 +725,8 @@ color: var(--primary-text-color);
     width: 32px;
     height: 32px;
     border-radius: 50%;
-
+    padding-top: 6px;
+    padding-bottom: 6px;
     margin-right: 8px;
     margin-top: 8px;
     background: #FFFFFF;
@@ -733,6 +734,8 @@ color: var(--primary-text-color);
     box-sizing: border-box;
   
   }
-  
+  .icon-close {
+    align-items: center;
+  }
   
 
