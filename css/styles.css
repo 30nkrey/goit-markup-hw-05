@@ -508,7 +508,21 @@ margin-bottom: 50px;
 }
 
 /*Section Projects with photo*/
+
+
+.over.is-hidden {
+  opacity: 1;
+  pointer-events: none;
    
+}
+
+.over {
+  position: fixed;  
+  width: 370px;
+  height: 294px;
+  
+}
+ 
 .job-c {
  display: flex; 
  flex-wrap: wrap;
@@ -518,9 +532,22 @@ margin-bottom: 50px;
 .cartka {
 display: block;
 }
+.p-modal .over:hover {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+
+}
 
 .job-c .cartka:hover {
   box-shadow: 0 4px 4px 0 #00000025;
+
 }
 
 .item-c {
@@ -769,3 +796,6 @@ color: var(--primary-text-color);
   }
   
 
+/*<svg class="icon finger" width="16" height="16">
+                  <use href="./images/symbol-defs (3).svg#finger"></use>
+                </svg>*/
