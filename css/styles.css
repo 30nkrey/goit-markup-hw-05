@@ -508,18 +508,31 @@ margin-bottom: 50px;
 }
 
 /*Section Projects with photo*/
+.actions {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  
+  width: 370px;
+  height: 294px;
+  left: 196px;
+  top: 262px;
 
+background: rgba(33, 150, 243, 0.9);
+  
+  opacity: .5;
+  z-index: 10;
+}
 
 .over.is-hidden {
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
    
 }
 
 .over {
   position: fixed;  
-  width: 370px;
-  height: 294px;
+  
   
 }
  
@@ -533,6 +546,7 @@ margin-bottom: 50px;
 display: block;
 }
 .p-modal .over:hover {
+  opacity: 0,5;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
