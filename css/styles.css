@@ -588,6 +588,7 @@ margin-bottom: 50px;
 
 .actions:hover .over {
   transform: translateY(0);
+  transition: transform 250ms ease;
 }
 
 .cartka:hover .actions {
