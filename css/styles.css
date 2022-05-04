@@ -75,7 +75,7 @@ ul {
  Логотип
 
 .hr-toge {
-border-bottom: 1px solid var(--border-hr-color);
+  border-bottom: 1px solid var(--border-hr-color);
 }
 
 .heade {
@@ -107,6 +107,7 @@ a {
 /*Навигация без логотипа*/
 
 .links { 
+  position: relative;
   display: flex;
   margin-left: 93px;
   padding-top: 32px;
@@ -115,6 +116,16 @@ a {
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-align: left; 
+}
+.link-current::after {
+position: absolute;
+content: "";
+display: block;
+width: 100%;
+height: 3px;
+bottom: 0;
+background-color: var(--accent-color);
+
 }
 .links >.item {
   display: block;
@@ -129,8 +140,8 @@ a {
   color: var(--second-text-color);
 }
 
-.link-current::after {
-  content: "";
+.link-current {
+  
   width: 78px;
   height: 48px;
   padding-top: 32px;
@@ -141,6 +152,7 @@ a {
 
 .links .link-current:hover,
 .links .link-current:focus {
+  
   color: var(--accent-color);
 }
 
