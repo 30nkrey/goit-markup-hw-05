@@ -809,55 +809,74 @@ color: var(--primary-text-color);
 .logo-f > span {
   color: var(--background-color);
 }
+
 /* Modal window*/
 
 .backdrop {
-  position: absolute;
+  position: fixed;
   width: 1600px;
   height: 1024px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); 
-  background: rgba(0, 0, 0, 0.2);
-}
-
-  .backdrop.is-hidden {
-    opacity: 0; 
-    pointer-events: none;
-}
-
-  .modal {
-    position: fixed;
-    width: 528px;
-    height: 581px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-  }
-
-  .pos {
-    position: absolute;
-    right: 0;
-    top: 0;
-    opacity: 1;
-    display: block;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    margin-right: 8px;
-    margin-top: 8px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
   
-  }
-  .icon-close {
-    align-items: center;
-  }
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0; 
+  pointer-events: none;
+}
+
+.zakaz:hover,
+.zakaz:focus .modal {
+  opacity: 1;
+}
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+    
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.pos {
+  position: fixed;
+  right: 0;
+  top: 0;
+  opacity: 1;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-right: 8px;
+  margin-top: 8px;
+  background: var(--background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-close {
+  align-items: center;
+}
+
+.pos:hover,
+.pos:focus.modal {
+  opacity: 0;
+}
   
 
