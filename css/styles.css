@@ -787,16 +787,9 @@ color: var(--primary-text-color);
   color: var(--background-color);
 }
 /* Modal window*/
-transform: translate(0%);
-transition: transform 250ms ease;
-.zakaz {
-  transform: translate(100%);
-  opacity: 1;
-}
-.pos {
-  transform: translate(0%);
-  opacity: 0;
-}
+
+
+
 
 .backdrop {
   position: absolute;
@@ -808,10 +801,10 @@ transition: transform 250ms ease;
   background: rgba(0, 0, 0, 0.2);
 }
   .backdrop.is-hidden {
-    opacity: 0;
+    opacity: 0; 
     pointer-events: none;
-   
 }
+
   .modal {
     position: fixed;
     width: 528px;
@@ -823,6 +816,7 @@ transition: transform 250ms ease;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   }
+
   .pos {
     position: absolute;
     right: 0;
