@@ -126,7 +126,8 @@ a {
   content: "";
   display: block;
   width: 100%;
-  height: 3px;
+  height: 4px;
+  border-radius: 2px;
   bottom: 0;
   background-color: var(--accent-color);
 }
@@ -190,10 +191,14 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-post {
   margin-right: 10px;
   fill: currentColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover,
@@ -211,6 +216,9 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* Section Главная*/
@@ -852,7 +860,7 @@ color: var(--primary-text-color);
   position: fixed;
   right: 0;
   top: 0;
-  opacity: 1;
+  
   display: block;
   width: 32px;
   height: 32px;
@@ -876,5 +884,10 @@ color: var(--primary-text-color);
 .pos:focus.modal {
   opacity: 0;
 }
+.pos:hover,
+.pos:focus {
+  opacity: 1; 
+
+
   
 
