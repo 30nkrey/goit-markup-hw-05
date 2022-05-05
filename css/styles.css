@@ -322,7 +322,7 @@ a {
 }
  
 .our-strong {
-  padding-top: 0px;
+  
   margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
@@ -653,7 +653,7 @@ color: var(--primary-text-color);
   padding-bottom: 94px;
 }
 
-.clients {
+/*.clients {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -661,7 +661,7 @@ color: var(--primary-text-color);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-}
+}*/
 
 .icon-logo {
   fill: var(--color-clients);
