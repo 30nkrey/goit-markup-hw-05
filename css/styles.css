@@ -123,22 +123,22 @@ a {
 }
 
 .link-current::after {
-  position: relative;
+  position: absolute;
   content: "";
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
-   
   background-color: var(--accent-color);
+  bottom: 0;
 }
 
 .link-current {
-  
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--accent-color);
-  
+ 
 }
 
 .links >.item {
