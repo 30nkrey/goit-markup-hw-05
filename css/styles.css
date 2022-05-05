@@ -414,7 +414,7 @@ a {
 
 /*Section Чем занимаются*/
 
-.un-chem {
+.univers {
   padding-top: 0;
 }
 
@@ -423,10 +423,11 @@ position: relative;
 
 }
 .label {
-padding-top: 27px;
-height: 70px; 
 
- 
+height: 70px; 
+display: flex;
+justify-content: center;
+align-items: center;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -434,7 +435,7 @@ text-align: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 
-color: #FFFFFF;
+color: var(--background-color);
 background: rgba(47, 48, 58, 0.8);
 } 
   
@@ -467,7 +468,7 @@ background: rgba(47, 48, 58, 0.8);
   height: 44px;
   border-radius: 50%;
   fill: var(--color-clients);
-  transition-property: fill;
+  transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -733,6 +734,9 @@ color: var(--primary-text-color);
   border-radius: 50%;
   color: var(--white-background-color);
   background-color: #ffffff10;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 
@@ -746,6 +750,7 @@ color: var(--primary-text-color);
 
 .link-social:hover {
  background-color: var(--accent-color);
+ 
 }
 
 .icons .item-social:not(:last-child) {
